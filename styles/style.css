@@ -21,10 +21,6 @@
   padding: 0;
 }
 
-body, html{
-    height: 100%;
-}
-
 p,
 h1,
 h2,
@@ -44,16 +40,13 @@ body{
     
     display: grid;
     place-content: center;
-    margin: 1rem;
-    align-items: center;
-    padding: 1.8rem;
 }
 
 .banner{
     border-radius: 0.5rem;
     overflow: hidden;
     margin: 1rem;
-    max-width: 40rem;
+    max-width: 600px;
     height: 100%;
 }
 
@@ -171,13 +164,9 @@ body{
     margin-top: 1rem;
 }
 
-@media screen and (max-width: 600px){
+@media (max-width: 600px){
     body{
         font-size: 14px;
-    }
-
-    .banner{
-        max-width: 100%;
     }
 
     .banner-join{
@@ -189,8 +178,15 @@ body{
         font-size: 18px;
     }
 
+    .join-subtittle{
+        font-size: 15px;
+    }
+
     .banner-flex{
         display: grid;
+        
+    border-radius:  0 0 0.5rem 0.5rem;
+    overflow: hidden;
     }
 
     .banner-price{
