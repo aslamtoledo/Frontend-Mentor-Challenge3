@@ -2,7 +2,9 @@
     --font-main: 'Karla', sans-serif;
 
     --Cyan: hsl(179, 62%, 43%);
+    --ltcyan: hsl(179, 62%, 45%);
     --Bright-Yellow: hsl(71, 73%, 54%);
+    --yellow: hsl(71, 73%, 48%);
     --Light-Gray: hsl(204, 43%, 93%);
     --Grayish-Blue: hsl(218, 22%, 67%);
     --white: #ffffff;
@@ -16,10 +18,10 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 body, html{
-    display: block;
     height: 100%;
 }
 
@@ -44,13 +46,14 @@ body{
     place-content: center;
     margin: 1rem;
     align-items: center;
+    padding: 1.8rem;
 }
 
 .banner{
     border-radius: 0.5rem;
     overflow: hidden;
     margin: 1rem;
-    max-width: 600px;
+    max-width: 40rem;
     height: 100%;
 }
 
@@ -126,7 +129,7 @@ body{
 }
 
 .button{
-    background-color: var(--Bright-Yellow);
+    background-color: var(--yellow);
     color: var(--white);
     font-weight: 700;
     border: none;
@@ -144,7 +147,7 @@ body{
 /*Why section*/
 
 .banner-why{
-    background-color: var(--Grayish-Blue);
+    background-color: var(--ltcyan);
     text-align: left;
     padding: 3rem;
     color: var(--white);
@@ -156,6 +159,7 @@ body{
 }
 
 .why-list{
+    color: var(--Light-Gray);
     margin: 1rem 0;
 }
 
@@ -167,13 +171,48 @@ body{
     margin-top: 1rem;
 }
 
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
+    body{
+        font-size: 14px;
+    }
+
     .banner{
-        width: auto;
+        max-width: 100%;
+    }
+
+    .banner-join{
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .join-tittle{
+        font-size: 18px;
     }
 
     .banner-flex{
         display: grid;
+    }
+
+    .banner-price{
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .price-tittle{
+        font-size: 18px;
+    }
+
+    .price-list{
+        margin: 1rem auto !important;
+    }
+
+    .price-price{
+        font-size: 22px;
+    }
+
+    .banner-why{
+        margin: 0;
+        padding: 1rem;
     }
 
     .attribution{
