@@ -1,0 +1,182 @@
+:root{
+    --font-main: 'Karla', sans-serif;
+
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body, html{
+    display: block;
+    height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body{
+    background-color: var(--Light-Gray);
+
+    font-size: 16px;
+    font-family: var(--font-main);
+    font-weight: 400;
+    
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+    align-items: center;
+}
+
+.banner{
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 1rem;
+    max-width: 600px;
+    height: 100%;
+}
+
+/*join section*/
+
+.banner-join{
+    background-color: var(--white);
+    padding: 2rem;
+    text-align: left;
+    align-items: center;
+}
+
+.join-tittle{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--Cyan);
+}
+
+.join-subtittle{
+    font-weight: 700;
+    color: var(--Bright-Yellow);
+    margin: 1rem 0;
+}
+
+.join-text{
+    color: var(--Cyan);
+    margin-bottom: 1rem;
+}
+
+/*price and Why section*/
+
+.banner-flex{
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+/*price section*/
+
+.banner-price{
+    background-color: var(--Cyan);
+    text-align: left;
+    align-items: center;
+    padding: 2rem;
+    color: var(--white);
+}
+
+.price-tittle{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.price-list{
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.price-price{
+    font-weight: 700;
+    font-size: 29px;
+}
+
+.price-month{
+    margin-left: 1rem;
+    color: var(--Light-Gray);
+}
+
+.price-text{
+    margin: 1rem 0;
+}
+
+.button{
+    background-color: var(--Bright-Yellow);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    border-radius: 0.800rem;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(31, 47, 86);
+}
+
+/*Why section*/
+
+.banner-why{
+    background-color: var(--Grayish-Blue);
+    text-align: left;
+    padding: 3rem;
+    color: var(--white);
+}
+
+.why-tittle{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.why-list{
+    margin: 1rem 0;
+}
+
+.list-content{
+    padding: 0.300rem;
+}
+
+.attribution{
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px){
+    .banner{
+        width: auto;
+    }
+
+    .banner-flex{
+        display: grid;
+    }
+
+    .attribution{
+        display: none;
+    }
+}
